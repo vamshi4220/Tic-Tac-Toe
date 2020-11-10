@@ -7,7 +7,7 @@ public class TicTacToe {
 	public static void main (String[] args) {
 
                 creatBoard();
-
+		userChoice();
 
 	}
 
@@ -19,7 +19,37 @@ public class TicTacToe {
                         Board[index]=' ';
                  }
 
-
          }
+
+//UC2
+
+        public static void userChoice(){
+
+        System.out.println("Enter 1 for 'X' or 2 for 'O':");
+        int choice=sc.nextInt();
+
+                if(choice == 1){
+
+                         PlayerChoice[0]='X';
+                         PlayerChoice[1]='O';
+
+                }
+
+                else if(choice == 2){
+
+                          PlayerChoice[0]='O';
+                          PlayerChoice[1]='X';
+
+                }
+
+                else  {
+
+                        System.out.println("wrong input");
+                        userChoice();
+
+                }
+
+        }
+
 
    }
