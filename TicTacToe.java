@@ -8,7 +8,7 @@ public class TicTacToe {
 
                 creatBoard();
 		userChoice();
-
+		displayBoard();
 	}
 
  //UC1
@@ -49,6 +49,22 @@ public class TicTacToe {
 
                 }
 
+        }
+
+//UC3
+
+        public static void displayBoard(){
+
+                for(int i=1;i<Board.length;i++){
+
+                    System.out.print("|"+Board[i]+"|");
+                    if(i%3 == 0){
+
+                         System.out.println("");
+                         System.out.println("==========");
+
+                        }
+                }
         }
 
 
