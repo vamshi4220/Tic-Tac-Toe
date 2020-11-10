@@ -9,9 +9,12 @@ public class TicTacToe {
                 creatBoard();
 		userChoice();
 		displayBoard();
+		positionChoice();
+
 	}
 
  //UC1
+
 
         public static void creatBoard() {
 
@@ -66,6 +69,30 @@ public class TicTacToe {
                         }
                 }
         }
+
+//UC4
+
+        public static void positionChoice(){
+
+                System.out.println("select your position:");
+                int userNum=sc.nextInt();
+
+                if(userNum > 9) {
+                        System.out.print("wrong input");
+                        positionChoice();
+
+                }
+
+                else {
+
+                        Board[userNum]=PlayerChoice[0];
+                        displayBoard();
+                        positionChoice();
+
+                }
+
+        }
+
 
 
    }
