@@ -2,6 +2,8 @@ import java.util.*;
 
 public class TicTacToe {
 
+	Scanner sc=new Scanner(System.in);
+
 	public static char[] Board=new char[10];
 
 	public static void main (String[] args) {
